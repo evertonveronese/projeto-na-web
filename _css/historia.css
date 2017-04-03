@@ -1,0 +1,15 @@
+@charset "utf-8";
+#frame-spec {
+		width: 380px;
+		height: 480px;
+		border:none;
+		-webkit-overflow:hidden;
+		overflow:hidden;
+}
+#frame-spec::-webkit-scrollbar{
+	display:none;
+}
+
+#frame-spec html{
+	overflow:hidden;
+}
