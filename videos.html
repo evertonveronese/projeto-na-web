@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico" />
+
+    <title>PIZZARIA - Site Modelo</title>
+
+    <link href="_css/reset.css" rel="stylesheet">
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+    <link href="_css/pizzaria.css" rel="stylesheet">
+    <link href="_css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" type="text/css" href="_css/videos.css"/>
+
+	<script language="javascript" src="_javascript/funcoes.js"></script>
+		
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body id="page-top" class="videos">
+<div id="skipnav"><a href="#maincontent">Conteúdo Menu</a></div>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+		
+            <div class="navbar-header page-scroll topo-pizzaria">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+					<img src="_imagens/logo-pizzaria.png" class="logo-pizzaria" />				
+				</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menuNav" class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/inicio.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="index.html">HOME</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/historia.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="historia.html">HISTÓRIA</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/cardapio.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="cardapio.html">CARDÁPIO</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/filme.gif')" onMouseOut="mudaFoto('_imagens/home.png')" href="videos.html">VIDEOS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/contato.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="contato.html">CONTATO</a>
+                    </li>
+                </ul>
+				<img id="icone" src="_imagens/home.png"/>
+            </div>
+        </div>
+    </nav>
+			<section id="corpo-inteiro"> <!-- semântico -->
+				<article id="noticia"> <!-- semântico -->
+					<header> <!-- semântico -->
+						<hgroup> <!-- semântico -->
+							<h1>
+								Sons e vídeos
+							</h1>
+						</hgroup>
+					</header>
+					<div id="tv-radio">
+							<audio id="musica" controls>
+								<source src="_media/tarantella.mp3" 
+									type="audio/mpeg"/>
+								Desculpe, mas não foi possível carregar o áudio	
+							</audio>
+							<video 
+								id="filme" 
+								controls 
+								poster="_media/como-fazemos.jpg">
+								<source 
+										src="_media/como-fazemos.mp4"
+										type="video/mp4"/>
+							</video>
+					</div>
+				</article>
+			</section>
+			
+    <!-- Footer -->
+    <footer class="text-center titillium-bold">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div id="div-pizzaria" class="footer-col col-md-4">
+						<img src="_imagens/logo-pizzaria.png" class="logo-rodape"/>	
+                    </div>
+                    <div class="footer-col col-md-1 text-left">
+                        <h5>HOME</h5>
+                        <a href="historia.html">HISTÓRIA</a>
+                        <a href="cardapio.html">CARDÁPIO</a>
+                        <a href="videos.html">VIDEOS</a>
+                        <a href="contato.html">CONTATO</a>
+                    </div>
+                    <div class="footer-col col-md-3 text-left titillium-font">
+                        <h5>ENDEREÇO</h5>
+                        <div class="font1.5">
+							Rua Edson Rodrigues, 460 <br />
+							Parque Francal<br />
+							Franca/SP | CEP 14403-127
+						</div>
+                    </div>
+                    <div class="footer-col col-md-3 text-left titillium-font">
+                        <h5>CONTATO</h5>
+                        <div>
+							contato@evertonveronese.com.br<br />
+							(16) 99281.7641
+						</div>
+                    </div>
+                    <div class="footer-col col-md-1 text-left">
+                        <h5>REDES SOCIAIS</h5>
+                        <a href="https://www.facebook.com.br/tom_veronese" class="facebook"><span>Facebook</span></a>
+                        <a href="https://www.instagram.com/?hl=pt-br" class="instagram"><span>Instagram</span></a>
+                        <a href="https://www.linkedin.com.br/tom_veronese" class="linkedin"><span>Linkedin</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-left ciutadella">
+						<a class="btn btn-primary btn-topo" href="#page-top">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						Copyright &copy; 2017 Everton S. Veronese. Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+    <script src="_javascript/jquery-1.10.2.min.js"></script>
+    <script src="_javascript/bootstrap.min.js"></script>
+    <script src="_javascript/jquery.easing.min.js"></script>
+    <script src="_javascript/jqBootstrapValidation.js"></script>
+    <script src="_javascript/pizzaria.min.js"></script>
+</body>
+
+</html>
+

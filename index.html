@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Enviando arquivo para o git - 03/04/2017 -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico" />
+
+    <title>PIZZARIA - Site Modelo</title>
+
+    <link href="_css/reset.css" rel="stylesheet">
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+    <link href="_css/pizzaria.css" rel="stylesheet">
+    <link href="_css/owl.carousel.min.css" rel="stylesheet">
+    <link href="_css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<script language="javascript" src="_javascript/funcoes.js"></script>
+		
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Conteúdo Menu</a></div>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+		
+            <div class="navbar-header page-scroll topo-pizzaria">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+					<img src="_imagens/logo-pizzaria.png" class="logo-pizzaria" />				
+				</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menuNav" class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/inicio.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="index.html">HOME</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/historia.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="historia.html">HISTÓRIA</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/cardapio.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="cardapio.html">CARDÁPIO</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/filme.gif')" onMouseOut="mudaFoto('_imagens/home.png')" href="videos.html">VIDEOS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/contato.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="contato.html">CONTATO</a>
+                    </li>
+                </ul>
+				<img id="icone" src="_imagens/home.png"/>
+            </div>
+        </div>
+    </nav>
+
+	<header class="slide">
+		<div class="owl-carousel">
+			<div class="item">
+				<img class="img-responsive" src="_imagens/pizzaria1.jpg" alt="">
+			</div>
+			<div class="item">
+				<img class="img-responsive" src="_imagens/pizzaria2.jpg" alt="">
+			</div>
+		</div>
+	</header>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Entre em contato</h2>
+					<div class="col-lg-6 col-lg-offset-3 contatodesc">
+						Este é um site modelo de uma pizzaria fictícia, onde foram utilizadas imagens de outras pizzarias encontradas no google apenas com o intúito de apresentar conteúdo para um trabalho para a faculdade.
+					</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <input type="text" class="form-control" placeholder="Nome" id="name" required data-validation-required-message="Por favor informe o seu nome.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-6 floating-label-form-group controls">
+                                <input type="email" class="form-control" placeholder="E-mail" id="email" required data-validation-required-message="Por favor informe o seu e-mail.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group col-xs-6 floating-label-form-group controls">
+                                <input type="tel" class="form-control" placeholder="Telefone" id="phone" required data-validation-required-message="Por favor informe o seu telefone.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required data-validation-required-message="Por favor digite a sua mensagem."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12 text-center">
+                                <button id="enviarForm" type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center titillium-bold">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div id="div-pizzaria" class="footer-col col-md-4">
+						<img src="_imagens/logo-pizzaria.png" class="logo-rodape"/>	
+                    </div>
+                    <div class="footer-col col-md-1 text-left">
+                        <h5>HOME</h5>
+                        <a href="historia.html">HISTÓRIA</a>
+                        <a href="cardapio.html">CARDÁPIO</a>
+                        <a href="videos.html">VIDEOS</a>
+                        <a href="contato.html">CONTATO</a>
+                    </div>
+                    <div class="footer-col col-md-3 text-left titillium-font">
+                        <h5>ENDEREÇO</h5>
+                        <div class="font1.5">
+							Rua Edson Rodrigues, 460 <br />
+							Parque Francal<br />
+							Franca/SP | CEP 14403-127
+						</div>
+                    </div>
+                    <div class="footer-col col-md-3 text-left titillium-font">
+                        <h5>CONTATO</h5>
+                        <div>
+							contato@evertonveronese.com.br<br />
+							(16) 99281.7641
+						</div>
+                    </div>
+                    <div class="footer-col col-md-1 text-left">
+                        <h5>REDES SOCIAIS</h5>
+                        <a href="https://www.facebook.com.br/tom_veronese" class="facebook"><span>Facebook</span></a>
+                        <a href="https://www.instagram.com/?hl=pt-br" class="instagram"><span>Instagram</span></a>
+                        <a href="https://www.linkedin.com.br/tom_veronese" class="linkedin"><span>Linkedin</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-left ciutadella">
+						<a class="btn btn-primary btn-topo" href="#page-top">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						Copyright &copy; 2017 Everton S. Veronese. Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+				<div class="close-modal" data-dismiss="modal">
+					X
+				</div>
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-2">
+                        <div class="modal-body">
+							<div class="col-sm-12 contato-item">
+								<h4 class="titillium-semibold">Faça sua cotação</h4>
+							</div>
+                        </div>
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col-lg-12 col-lg-offset-3">
+						<form name="sentMessage" id="contactForm" novalidate>
+							<div class="row control-group">
+								<div class="form-group col-xs-12 floating-label-form-group controls">
+									<input type="text" class="form-control" placeholder="Nome" id="name" >
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+							<div class="row control-group">
+								<div class="form-group col-xs-6 floating-label-form-group controls">
+									<input type="email" class="form-control" placeholder="E-mail" id="email">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group col-xs-6 floating-label-form-group controls">
+									<input type="tel" class="form-control" placeholder="Telefone" id="phone">
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+							<div class="row control-group">
+								<div class="form-group col-xs-12 floating-label-form-group controls">
+									<textarea rows="5" class="form-control" placeholder="Mensagem" id="message"></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+							<div id="success"></div>
+							<div class="row">
+								<div class="form-group col-xs-12 text-center">
+									<button id="enviarModal" type="submit" class="btn btn-default">Enviar</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="_javascript/jquery-1.10.2.min.js"></script>
+    <script src="_javascript/owl.carousel.min.js"></script>
+    <script src="_javascript/bootstrap.min.js"></script>
+    <script src="_javascript/jquery.easing.min.js"></script>
+    <script src="_javascript/jqBootstrapValidation.js"></script>
+    <script src="_javascript/pizzaria.min.js"></script>
+
+	<script>
+	$(document).ready(function () {
+		$(".owl-carousel").owlCarousel({
+			autoPlay: 3000, //Set AutoPlay to 3 seconds
+			dots: true,
+			items: 1,
+			itemsDesktop: [1199, 3],
+			itemsDesktopSmall: [979, 3]
+		});
+	});   
+	</script>
+</body>
+
+</html>

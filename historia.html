@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.ico" />
+
+    <title>PIZZARIA - Site Modelo</title>
+
+    <link href="_css/reset.css" rel="stylesheet">
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+    <link href="_css/pizzaria.css" rel="stylesheet">
+    <link href="_css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" type="text/css" href="_css/historia.css"/>
+
+	<script language="javascript" src="_javascript/funcoes.js"></script>
+		
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body id="page-top" class="historia">
+<div id="skipnav"><a href="#maincontent">Conteúdo Menu</a></div>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+		
+            <div class="navbar-header page-scroll topo-pizzaria">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+					<img src="_imagens/logo-pizzaria.png" class="logo-pizzaria" />				
+				</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menuNav" class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/inicio.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="index.html">HOME</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/historia.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="historia.html">HISTÓRIA</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/cardapio.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="cardapio.html">CARDÁPIO</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/filme.gif')" onMouseOut="mudaFoto('_imagens/home.png')" href="videos.html">VIDEOS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a onMouseOver="mudaFoto('_imagens/contato.png')" onMouseOut="mudaFoto('_imagens/home.png')" href="contato.html">CONTATO</a>
+                    </li>
+                </ul>
+				<img id="icone" src="_imagens/home.png"/>
+            </div>
+        </div>
+    </nav>
+
+		<section id="corpo-inteiro"> <!-- semântico -->
+			<article id="historia"> <!-- semântico -->
+				<header> <!-- semântico -->
+					<hgroup>
+						<h1>
+							Conheça a história da nossa empresa
+						</h1>
+					</hgroup>
+				</header>
+				<p class="text-center">	
+					Clique em qualquer área destacada da imagem para ter mais informações sobre nossa empresa. </br>
+					Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+				</p>
+				<section id="conteudo">
+					<div class="container">
+						<div class="row">
+							<img src="_imagens/historia-pizzaria.jpg" class="imagem-historia" usemap="#meumapa"/>
+							<map name="meumapa">
+								<area shape="rect" coords="500,200,350,126" href="detalhes-historia.html#historia" target="janela" alt="Sun">
+								<area shape="rect" coords="350,150,150,56" href="detalhes-historia.html#funcionarios" target="janela" alt="Sun">
+								<area shape="rect" coords="0,200,150,126" href="detalhes-historia.html#diferencial" target="janela" alt="Sun">
+								<area shape="rect" coords="0,320,150,406" href="detalhes-historia.html#familia" target="janela" alt="Sun">
+								<area shape="rect" coords="450,400,330,456" href="detalhes-historia.html#inicio" target="janela" alt="Sun">
+							</map>
+							<iframe 
+								src="detalhes-historia.html"
+								name="janela"
+								id="frame-spec"
+								class="detalhes-historia">
+							</iframe>
+						</div>
+					</div>
+				</section>
+			</article>
+		</section>
+		
+    <!-- Footer -->
+    <footer class="text-center titillium-bold">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div id="div-pizzaria" class="footer-col col-md-4">
+						<img src="_imagens/logo-pizzaria.png" class="logo-rodape"/>	
+                    </div>
+                    <div class="footer-col col-md-1 text-left">
+                        <h5>HOME</h5>
+                        <a href="historia.html">HISTÓRIA</a>
+                        <a href="cardapio.html">CARDÁPIO</a>
+                        <a href="videos.html">VIDEOS</a>
+                        <a href="contato.html">CONTATO</a>
+                    </div>
+                    <div class="footer-col col-md-3 text-left titillium-font">
+                        <h5>ENDEREÇO</h5>
+                        <div class="font1.5">
+							Rua Edson Rodrigues, 460 <br />
+							Parque Francal<br />
+							Franca/SP | CEP 14403-127
+						</div>
+                    </div>
+                    <div class="footer-col col-md-3 text-left titillium-font">
+                        <h5>CONTATO</h5>
+                        <div>
+							contato@evertonveronese.com.br<br />
+							(16) 99281.7641
+						</div>
+                    </div>
+                    <div class="footer-col col-md-1 text-left">
+                        <h5>REDES SOCIAIS</h5>
+                        <a href="https://www.facebook.com.br/tom_veronese" class="facebook"><span>Facebook</span></a>
+                        <a href="https://www.instagram.com/?hl=pt-br" class="instagram"><span>Instagram</span></a>
+                        <a href="https://www.linkedin.com.br/tom_veronese" class="linkedin"><span>Linkedin</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-left ciutadella">
+						<a class="btn btn-primary btn-topo" href="#page-top">
+							<i class="fa fa-chevron-up"></i>
+						</a>
+						Copyright &copy; 2017 Everton S. Veronese. Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+    <script src="_javascript/jquery-1.10.2.min.js"></script>
+    <script src="_javascript/bootstrap.min.js"></script>
+    <script src="_javascript/jquery.easing.min.js"></script>
+    <script src="_javascript/jqBootstrapValidation.js"></script>
+    <script src="_javascript/pizzaria.min.js"></script>
+</body>
+
+</html>
+
+
